@@ -21,6 +21,8 @@ https://severalnines.com/blog/redis-vs-dynamodb-comparison/
 대표적인 모델은 MongoDB이다. https://kciter.so/posts/about-mongodb
 저장된 문서를 컬렉션으로 관리하며 문서 저장과 동시에 문서 ID 에 대한 인덱스를 생성한다. 문서 ID 에 대한 인덱스를 사용하여 O(1) 시간 안에 문서를 조회할 수 있다.
 Embedded Document: Join기능을 대체, 여러개의 테이블을 하나의 Document 내에 모아둘 수 있음, View처럼 한번에 조회 가능
+최대한 단순하면서 많은 데이터 다루고자 하는 경우, Hadoop, Spark와의 통합 지원가능, RDBMS와 다르게 데이터 구조 자유로움
+https://kciter.so/images/2021-02-25-about-mongodb/mongodb-layer.jpg
 
 
 3. Column Model
