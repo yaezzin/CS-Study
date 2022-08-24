@@ -1,6 +1,6 @@
-### 저장 방식에 따른 NoSQL 분류
+## 저장 방식에 따른 NoSQL 분류
 
-# 1. Key-Value Model
+### 1. Key-Value Model
 
 가장 기본적인 형태의 NoSQL 이며 키 하나로 데이터 하나를 저장하고 조회할 수 있는 단일 키-값 구조를 갖는다. 데이터의 항목에는 제한이 없다.   
 대표적 모델은 AWS의 DynamoDB이다. https://aws.amazon.com/ko/nosql/key-value/.  
@@ -14,7 +14,7 @@
 https://severalnines.com/blog/redis-vs-dynamodb-comparison/
 
 
-# 2. Document Model
+### 2. Document Model
 
 키-값 모델을 개념적으로 확장한 구조로 하나의 키에 하나의 구조화된 문서를 저장하고 조회한다. 논리적인 데이터 저장과 조회 방법이 관계형 데이터베이스와 유사하다. 키는 문서에 대한 ID 로 표현된다.   
 대표적인 모델은 MongoDB이다. https://kciter.so/posts/about-mongodb.  
@@ -24,7 +24,7 @@ Embedded Document: Join기능을 대체, 여러개의 테이블을 하나의 Doc
 https://kciter.so/images/2021-02-25-about-mongodb/mongodb-layer.jpg.   
 
 
-# 3. Column Model
+### 3. Column Model
 
 하나의 키에 여러 개의 컬럼 이름과 컬럼 값의 쌍으로 이루어진 데이터를 저장하고 조회한다. 모든 컬럼은 항상 타임 스탬프 값과 함께 저장된다.   
 구글의 빅테이블이 대표적인 예로 차후 컬럼형 NoSQL 은 빅테이블의 영향을 받았다. 이러한 이유로 Row key, Column Key, Column Family 같은 빅테이블 개념이 공통적으로 사용된다.    
