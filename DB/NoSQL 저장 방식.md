@@ -21,7 +21,7 @@ https://severalnines.com/blog/redis-vs-dynamodb-comparison/
 저장된 문서를 컬렉션으로 관리하며 문서 저장과 동시에 문서 ID 에 대한 인덱스를 생성한다. 문서 ID 에 대한 인덱스를 사용하여 O(1) 시간 안에 문서를 조회할 수 있다.   
 Embedded Document: Join기능을 대체, 여러개의 테이블을 하나의 Document 내에 모아둘 수 있음, View처럼 한번에 조회 가능.   
 최대한 단순하면서 많은 데이터 다루고자 하는 경우, Hadoop, Spark와의 통합 지원가능, RDBMS와 다르게 데이터 구조 자유로움, 주로 JSON, API 특화, 웹서비스.   
-https://kciter.so/images/2021-02-25-about-mongodb/mongodb-layer.jpg.   
+![image](https://user-images.githubusercontent.com/75851930/186348258-4fd68d4a-6595-4634-b6c2-a1098be2d307.jpeg)
 
 
 ### 3. Column Model
@@ -31,5 +31,5 @@ https://kciter.so/images/2021-02-25-about-mongodb/mongodb-layer.jpg.
 저장의 기본 단위는 컬럼으로 컬럼은 컬럼 이름과 컬럼 값, 타임스탬프로 구성된다. 이러한 컬럼들의 집합이 로우(Row)이며, 로우키(Row key)는 각 로우를 유일하게 식별하는 값이다. 이러한 로우들의 집합은 키 스페이스(Key Space)가 된다.   
 대부분의 컬럼 모델 NoSQL 은 쓰기와 읽기 중에 쓰기에 더 특화되어 있다. 데이터를 먼저 커밋로그와 메모리에 저장한 후 응답하기 때문에 빠른 응답속도를 제공한다.      
 그렇기 때문에 읽기 연산 대비 쓰기 연산이 많은 서비스나 빠른 시간 안에 대량의 데이터를 입력하고 조회하는 서비스를 구현할 때 가장 좋은 성능을 보인다. 채팅 내용 저장, 실시간 분석을 위한 데이터 저장소 등의 서비스 구현에 적합하다.    
-https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb7llEJ%2FbtqwXd1DWf3%2FD2iZntiwkrESJfqzrxCVh1%2Fimg.png.  
 ex) HBase, Cassandra(대용량 데이터 저장 및 처리에 적합).   
+![image](https://user-images.githubusercontent.com/75851930/186348300-11f04869-c054-437a-933d-51266542e5af.png)
