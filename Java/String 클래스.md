@@ -2,7 +2,7 @@
 
 다른 언어에서는 문자열을 char형의 배열로 다루었지만 자바에서는 문자열을 위한 클래스인 String 클래스를 제공한다.
 
-## 변경 불가능한 클래스
+### 변경 불가능한 클래스
 
 ```java
 public final class String implements java.io.Serializable, Comparable {
@@ -20,7 +20,7 @@ public final class String implements java.io.Serializable, Comparable {
 * '+'를 이용하여 문자열을 결합하는 것은 매 연산마다 새로운 문자열을 가진 String 인스턴스가 생성되어 메모리 공간을 차지하는 것!
 * 그러므로 메모리 공간을 차지하게 되므로 가능한 결합횟수를 줄이거나, StringBuffer 클래스를 이용하자
 
-## 문자열의 비교
+### 문자열의 비교
 
 문자열을 만들 때는 ```문자열 리터럴을 지정하는 방법```, ```String 클래스의 생성자를 사용해서 만드는 방법```이 있음
 * String클래스의 생성자를 이용하는 경우 new를 통해 메모리할당이 이루어지기 떄문에 항상 새로운 인스턴스가 생성
@@ -46,7 +46,7 @@ String str4 = new String("abc");
 
 ## 문자열 리터럴
 
-## 1. 빈문자열
+### 1. 빈문자열
 
 자바는 길이가 0인 배열을 생성할 수 있음!
 
@@ -59,10 +59,15 @@ char c = ' ' ;  // 공백으로 초기화
 * String s = ""와 같은 문장은 참조변수s가 참조하고 있는 String 인스턴스는 new char[0]처럼 길이가 0인 char형 배열을 저장하는 것
 * 일반적으로 각 타입의 기본값으로 초기화 하지만 String과 char은 다음과 같이 "", ' '처럼 초기화함!
 
-## 생성자와 메서드
-[여기를 누르시오!](https://github.com/yaezzin/TIL/tree/main/Java/Java%EC%9D%98%20%EC%A0%95%EC%84%9D/9.%20java.lang%ED%8C%A8%ED%82%A4%EC%A7%80%EC%99%80%20%EC%9C%A0%EC%9A%A9%ED%95%9C%20%ED%81%B4%EB%9E%98%EC%8A%A4)
+## String 클래스의 생성자와 메서드
 
-## join()과 StringJoiner
+<img width="766" alt="스크린샷 2022-12-15 오후 11 20 03" src="https://user-images.githubusercontent.com/97823928/207884558-1f58523d-ed31-4c89-b345-40f443569df0.png">
+<img width="766" alt="스크린샷 2022-12-15 오후 11 19 19" src="https://user-images.githubusercontent.com/97823928/207884374-48ac2b3b-7414-4b82-8246-c2e683151340.png">
+<img width="766" alt="스크린샷 2022-12-15 오후 11 19 36" src="https://user-images.githubusercontent.com/97823928/207884457-afcdd2c6-e2a5-4f57-a91d-836038e3e8c5.png">
+
+
+### join()과 StringJoiner
+
 
 #### join()
 
@@ -87,7 +92,7 @@ for(String s : strArr)
 System.out.println(sj.toString()); // [AAA,BBB,CCC]
 ```
 
-## 유니코드의 보충 문자
+### 유니코드의 보충 문자
 
 > 문자를 다루는 메서드인데 매개변수 타입이 왜 int일까?
 
@@ -99,7 +104,7 @@ System.out.println(sj.toString()); // [AAA,BBB,CCC]
 
 ## 문자 인코딩 변환
 
-## String.format()
+### String.format()
 
 : 형식화된 문자열을 만드는 방법, printf()하고 사용법이 동일
 
@@ -108,7 +113,7 @@ String str = String.format("%d 더하기 %d는 %d입니다.", 3, 5, 3+5);
 System.out.println(str); //3 더하기 5는 8입니다.
 ```
 
-## 기본형 값을 String으로 변환    
+### 기본형 값을 String으로 변환    
 
 숫자로 이루어진 문자열을 숫자로, 또는 그 반대로 변환하는 경우 
 * '+' 또는 ValueOf() 이용하자
@@ -120,7 +125,7 @@ String str1 = i + ""; //100을 "100"으로 변환
 String str2 = String.ValueOf(i); //100을 "100"으로 변환
 ```
 
-## String을 기본형으로 변환
+### String을 기본형으로 변환
 
 * parseInt() 또는 ValueOf() 이용하자
 
